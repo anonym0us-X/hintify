@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h3>AI Mentor</h3>
+      <div class="problem-info">
+        <span id="problem-title">Select a problem</span>
+        <span id="problem-difficulty" class="difficulty"></span>
+      </div>
+    </div>
+    
+    <div class="hint-section">
+      <div id="hint-display" class="hint-display">
+        <p id="hint-text">Click 'Get Hint' for guidance</p>
+      </div>
+      
+      <div class="controls">
+        <button id="get-hint-btn" class="btn-primary">Get Hint</button>
+        <button id="next-hint-btn" class="btn-secondary" disabled>Next Hint</button>
+        <button id="reset-hints-btn" class="btn-secondary">Reset</button>
+      </div>
+      
+      <div class="stats">
+        <span>Hints used: <span id="hint-count">0</span>/3</span>
+      </div>
+    </div>
+    
+    <div class="loading hidden" id="loading">
+      <div class="spinner"></div>
+      <span>Generating hint...</span>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

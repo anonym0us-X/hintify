@@ -1,0 +1,140 @@
+body {
+  width: 350px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.container {
+  padding: 16px;
+}
+
+.header {
+  border-bottom: 1px solid #e1e4e8;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.header h3 {
+  margin: 0 0 8px 0;
+  color: #24292e;
+}
+
+.problem-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#problem-title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.difficulty {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.difficulty.easy { background: #e6f4ea; color: #137333; }
+.difficulty.medium { background: #fff8e6; color: #b06000; }
+.difficulty.hard { background: #fce8e6; color: #c5221f; }
+
+.hint-section {
+  margin: 16px 0;
+}
+
+.hint-display {
+  background: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 12px;
+  min-height: 60px;
+  margin-bottom: 12px;
+}
+
+#hint-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #24292e;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.btn-primary, .btn-secondary {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary {
+  background: #0969da;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #0858c2;
+}
+
+.btn-primary:disabled {
+  background: #8c959f;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: #f6f8fa;
+  color: #24292e;
+  border: 1px solid #d0d7de;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: #eaeef2;
+}
+
+.btn-secondary:disabled {
+  color: #8c959f;
+  cursor: not-allowed;
+}
+
+.stats {
+  text-align: center;
+  font-size: 12px;
+  color: #656d76;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #0969da;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
